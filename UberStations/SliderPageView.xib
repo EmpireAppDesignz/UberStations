@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderPageView">
+            <connections>
+                <outlet property="FevoriteSongBtn" destination="6ZZ-nh-lDB" id="6SF-Dw-vUG"/>
+                <outlet property="FevoriteStationBtn" destination="BLz-w7-5qP" id="aa4-8C-b8O"/>
+                <outlet property="HelpBtn" destination="vKD-HB-u6w" id="d9h-0t-83D"/>
+                <outlet property="HomeBtn" destination="y5K-lq-Xr2" id="VC9-91-jtU"/>
+                <outlet property="LocalRadioBtn" destination="EQ3-zS-Vut" id="Z1K-Lr-BRj"/>
+                <outlet property="PremimumeBtn" destination="G7b-1a-SaQ" id="s7q-FY-aim"/>
+                <outlet property="RateUsBtn" destination="fir-Ub-2yS" id="E2i-zb-uOC"/>
+                <outlet property="SearchBtn" destination="uV9-le-qKZ" id="o6X-oc-vTX"/>
+                <outlet property="SliderScrollView" destination="wc4-7d-dDA" id="zGi-gK-MHd"/>
+                <outlet property="SongHistoryBtn" destination="Wuq-VP-Lec" id="wtI-Bh-6aw"/>
+                <outlet property="StationHistoryBtn" destination="W7E-G8-mBF" id="tLI-jA-5Dg"/>
+                <outlet property="SuggestionBtn" destination="zHS-2l-nDN" id="5K1-N1-tcA"/>
+                <outlet property="TopShowBtn" destination="hJl-2h-RAo" id="cyV-BI-Hbo"/>
+                <outlet property="TopSongsBtn" destination="l9F-Yj-Fqj" id="SbS-m9-a1j"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="7QJ-ee-dQ9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" alpha="0.90000000000000002" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wc4-7d-dDA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="743"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uV9-le-qKZ" userLabel="Button-Search">
+                            <rect key="frame" x="0.0" y="0.0" width="271" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Slidersearchbar.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="SearchBtnClicked:" destination="-1" eventType="touchUpInside" id="bPX-rX-lbw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y5K-lq-Xr2" userLabel="Button-Home">
+                            <rect key="frame" x="0.0" y="49" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="home.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="HomeClicked:" destination="-1" eventType="touchUpInside" id="3AM-TD-dFc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l9F-Yj-Fqj" userLabel="Button-Top Songs">
+                            <rect key="frame" x="0.0" y="130" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Slidertop_songs_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Slidertopsongs_s.png"/>
+                            <connections>
+                                <action selector="TopSongClicked:" destination="-1" eventType="touchUpInside" id="yxA-i7-ZVy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zHS-2l-nDN" userLabel="Button-Suggestion">
+                            <rect key="frame" x="0.0" y="176" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Slidersuggestions_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Slidersiggestions_s.png"/>
+                            <connections>
+                                <action selector="SuggestionClicked:" destination="-1" eventType="touchUpInside" id="lLN-Lb-fDD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EQ3-zS-Vut" userLabel="Button-Local Radio">
+                            <rect key="frame" x="0.0" y="222" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Sliderlocal_radio_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Sliderlocal_radio_s.png"/>
+                            <connections>
+                                <action selector="LocalRadioClicked:" destination="-1" eventType="touchUpInside" id="PZz-sA-die"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="G7b-1a-SaQ" userLabel="Button-Premimume Station">
+                            <rect key="frame" x="0.0" y="268" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Sliderpremium_stations_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Sliderprimium_stations_s.png"/>
+                            <connections>
+                                <action selector="PremimumeStationClicked:" destination="-1" eventType="touchUpInside" id="bS3-Y1-NdU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hJl-2h-RAo" userLabel="Button-Top Shows">
+                            <rect key="frame" x="0.0" y="314" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Slidertop_shows_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Slidertop_shows_s.png"/>
+                            <connections>
+                                <action selector="TopShowsClicked:" destination="-1" eventType="touchUpInside" id="O7F-JI-Dza"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6ZZ-nh-lDB" userLabel="Button-Fevorite Song">
+                            <rect key="frame" x="0.0" y="395" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Sliderfavorite_songs_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Sliderfavorite_songs_s.png"/>
+                            <connections>
+                                <action selector="FevoriteSongClicked:" destination="-1" eventType="touchUpInside" id="DR6-4O-Kn9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BLz-w7-5qP" userLabel="Button-Fevorite Stations">
+                            <rect key="frame" x="0.0" y="441" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Sliderfavorites_stations_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Sliderfavorites_stations_s.png"/>
+                            <connections>
+                                <action selector="FevoriteStationClicked:" destination="-1" eventType="touchUpInside" id="hc7-fu-1s6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W7E-G8-mBF" userLabel="Button-Station History">
+                            <rect key="frame" x="0.0" y="569" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Sliderstations_history_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Sliderstations_history_s.png"/>
+                            <connections>
+                                <action selector="StationHistoryClicked:" destination="-1" eventType="touchUpInside" id="fQt-BD-KjQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fir-Ub-2yS" userLabel="Button-Rate Us">
+                            <rect key="frame" x="0.0" y="651" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Sliderrate_us_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Sliderrate_us_s.png"/>
+                            <connections>
+                                <action selector="RateUsClicked:" destination="-1" eventType="touchUpInside" id="u9g-03-3DB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vKD-HB-u6w" userLabel="Button-Help">
+                            <rect key="frame" x="0.0" y="697" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Sliderhelp_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Sliderhelp_s.png"/>
+                            <connections>
+                                <action selector="HelpClicked:" destination="-1" eventType="touchUpInside" id="Jwd-1K-IBb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wuq-VP-Lec" userLabel="Button-song History">
+                            <rect key="frame" x="0.0" y="523" width="271" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Slidersong_hostory_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="Slidersongs_history_s.png"/>
+                            <connections>
+                                <action selector="SongHistoryClicked:" destination="-1" eventType="touchUpInside" id="9O2-Cd-JPw"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SliderExplore.png" id="ypT-A3-nXh">
+                            <rect key="frame" x="0.0" y="95" width="271" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sliderfavorites.png" id="yx4-Gu-6G3">
+                            <rect key="frame" x="0.0" y="360" width="271" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sliderhistory.png" id="wCE-UN-rco">
+                            <rect key="frame" x="0.0" y="487" width="271" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slidersupport.png" id="qg0-7d-QAO">
+                            <rect key="frame" x="0.0" y="615" width="271" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.18823531270027161" green="0.22745099663734436" blue="0.28627452254295349" alpha="1" colorSpace="deviceRGB"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.22745099663734436" green="0.26666668057441711" blue="0.32941177487373352" alpha="1" colorSpace="deviceRGB"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="211" y="-477"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SliderExplore.png" width="517" height="64"/>
+        <image name="Sliderfavorite_songs_d.png" width="517" height="89"/>
+        <image name="Sliderfavorite_songs_s.png" width="517" height="89"/>
+        <image name="Sliderfavorites.png" width="517" height="63"/>
+        <image name="Sliderfavorites_stations_d.png" width="517" height="86"/>
+        <image name="Sliderfavorites_stations_s.png" width="517" height="86"/>
+        <image name="Sliderhelp_d.png" width="517" height="88"/>
+        <image name="Sliderhelp_s.png" width="517" height="88"/>
+        <image name="Sliderhistory.png" width="517" height="64"/>
+        <image name="Sliderlocal_radio_d.png" width="517" height="87"/>
+        <image name="Sliderlocal_radio_s.png" width="517" height="87"/>
+        <image name="Sliderpremium_stations_d.png" width="517" height="87"/>
+        <image name="Sliderprimium_stations_s.png" width="517" height="87"/>
+        <image name="Sliderrate_us_d.png" width="517" height="89"/>
+        <image name="Sliderrate_us_s.png" width="517" height="89"/>
+        <image name="Slidersearchbar.png" width="517" height="84"/>
+        <image name="Slidersiggestions_s.png" width="517" height="87"/>
+        <image name="Slidersong_hostory_d.png" width="517" height="89"/>
+        <image name="Slidersongs_history_s.png" width="517" height="89"/>
+        <image name="Sliderstations_history_d.png" width="517" height="87"/>
+        <image name="Sliderstations_history_s.png" width="517" height="87"/>
+        <image name="Slidersuggestions_d.png" width="517" height="87"/>
+        <image name="Slidersupport.png" width="517" height="64"/>
+        <image name="Slidertop_shows_d.png" width="517" height="91"/>
+        <image name="Slidertop_shows_s.png" width="517" height="91"/>
+        <image name="Slidertop_songs_d.png" width="517" height="90"/>
+        <image name="Slidertopsongs_s.png" width="517" height="90"/>
+        <image name="home.png" width="517" height="87"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
