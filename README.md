@@ -11,3 +11,5 @@ App Store Ready App is simple to redesign, reskin and launch.Designed with devel
 Uberstations API
 
 https://docs.google.com/document/d/1QM7ScdxNvg-ttwRi0EWn7KmaR02EP2gqwu5LNlsnO4k/pub
+
+Checkout my Applications in iTunes: http://empireappdesignz.com
